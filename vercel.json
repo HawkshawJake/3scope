@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "https://your-backend-url.railway.app/api/$1"
+      "dest": "https://3scope-production.up.railway.app/api/$1"
     },
     {
       "src": "/(.*)",
@@ -21,11 +21,6 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "https://your-backend-url.railway.app"
-  },
-  "functions": {
-    "src/pages/api/**/*.js": {
-      "runtime": "@vercel/node"
-    }
+    "VITE_API_URL": "https://3scope-production.up.railway.app"
   }
 }
